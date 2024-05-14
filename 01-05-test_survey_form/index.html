@@ -9,24 +9,24 @@
     <h1 id="title"> freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
-      <label id="name-label" for="name">Name<input id="name" type="text" required placeholder="Enter your name" /></label>
-      <label id="email-label" for="email">Email<input id="email" type="email" required placeholder="Enter your email" /></label>
-      <label id="number-label" for="number">Number<input id="number" type="number" min="13" max="120" placeholder=0 /></label>
-      <select id="dropdown">
+      <div><label id="name-label" for="name">Name <input id="name" type="text" required placeholder="Enter your name" /></label></div>
+      <div><label id="email-label" for="email">Email <input id="email" type="email" required placeholder="Enter your email" /></label></div>
+      <div><label id="number-label" for="number">Number <input id="number" type="number" min="13" max="120" placeholder=0 /></label></div>
+      <div><label for="dropdown">Pick a thing <select id="dropdown">
         <option value="">(select)</option>
         <option value="1">First Choice</option>
         <option value="2">Second Choice</option>
         <option value="3">Other</option>
-      </select>
-      <label for="friend"><input id="friend" type="radio" name="fof" value="friend" checked /> Friend</label>
+      </select></div>
+      <div>What are we to eachother? <label for="friend"><input id="friend" type="radio" name="fof" value="friend" checked /> Friend</label>
       <label for="foe"><input id="foe" type="radio" name="fof" value="foe" /> Foe</label>
-      <label for="unsure"><input id="unsure" type="radio" name="fof" value="unsure" /> Unsure</label>
-      <label for="feeling">How are you feeling today?
+      <label for="unsure"><input id="unsure" type="radio" name="fof" value="unsure" /> Unsure</label> </div>
+      <div><label for="feeling">How are you feeling today?
         <input id="happy" type="checkbox" value="happy">Happy</input>
         <input id="sad" type="checkbox" value="sad">Sad</input>
         <input id="tired" type="checkbox" value="tired">Tired</input>
-      </label>
-      <label for="reason"><textarea id="reason" rows=3 cols=30 placeholder="Tell me why you want to fight"></textarea>
+      </label></div>
+      <div><label for="reason"><textarea id="reason" rows=3 cols=30 placeholder="Tell me why you want to fight"></textarea></div>
       <input id="submit" type="submit" value="Submit">
     </form>
   </body>
